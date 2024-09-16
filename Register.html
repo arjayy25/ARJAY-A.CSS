@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url(bg.jpg);
+            background-position: 20%;
+            background-color: #f2f2f2;
+        }
+        .login-container {
+            width: 300px;
+            padding: 20px;
+            background-color: transparent;
+            border: 1px solid transparent;
+            margin: 100px auto;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            color: white;
+        }
+        .login-container h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: white;
+        }
+        .login-container input[type="text"],
+        .login-container input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+        .login-container button {
+            width: 100%;
+            padding: 10px;
+            background-color: red;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .login-container button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="login-container">
+        <h1><b>Sign Up</b></h1>
+        <form action="/submit_login" method="post">
+            <label for="username">First name</label>
+            <input type="text" class="form-control" id="firtname" placeholder="Enter First name">
+            <label for="password">Last name</label>
+            <input type="text" class="form-control" id="lastname" placeholder="Enter Last name">
+            <label for="password">Password</label>
+            <input type="password" value="" id="myinput" placeholder="Enter Password">
+            <label for="password">Confirm Password</label>p
+            <input type="password" value="" id="myinput" placeholder="Confirm Password">
+            <br>
+            <button type="submit">Sign up</button>
+            <p>By creating an account you agree to our Terms & Privacy</p>
+           
+        </form>
+    </div>
+</body>
+</html>

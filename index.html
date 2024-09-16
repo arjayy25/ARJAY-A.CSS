@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Login Form</title>
+</head>
+<body>
+    <div id="videoWrapper">
+        <video poster="Vid/BG VID.jpg" playsinline autoplay muted loop>
+              <source src="BG VID.mp4" type="video/mp4">
+          </video>
+          <h1>Welcome<br>Back</h1>
+          <p>We're trilled to see you again and hope you're ready for a <br>productive and enjoyable session with us.</p>
+    
+    <div class="login-container">
+        <h2>Log in</h2>
+        <form action="/submit_login" method="post">
+            <label for="username">Username</label>
+            <input type="text" class="form-control" id="username" placeholder="Enter username">
+            <label for="password">Password</label>p
+            <input type="password" value="" id="myinput" placeholder="Enter Password">
+            <input type="checkbox" onclick="myFunction()">Show Password 
+            <button type="submit">Login</button>
+            <input type="checkbox" class="form-check-label" id="rememberme">
+            <label class="form-check-label" for="rememberme">Remember me</label>
+            <div class="text-center">
+            <p>Don't have an account?<a href="Register.html">Register</a></p>
+            </div>
+        </form>
+       
+    </div>
+</body>
+</html>

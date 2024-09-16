@@ -1,0 +1,98 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    color: white;
+}
+#videoWrapper {
+height: 100vh;
+overflow: hidden;
+position: relative;
+}
+
+#videoWrapper video {
+position: absolute;
+min-width: 100%;
+min-height: 100%;
+width: auto;
+height: auto;
+object-fit: cover; 
+z-index: -100;
+
+top: 50%;
+left: 50%;
+transform: translateX(-50%) translateY(-50%);
+}
+
+#videoWrapper .caption {
+display: flex;
+justify-content: center;
+align-items: center;
+
+height: 100%;
+
+background-color: rgba(0, 0, 0, 0.3);
+}
+
+#videoWrapper .caption .contents {
+width:50%;
+color: #fff;
+text-align: center;
+padding: 2rem;
+
+}
+
+.login-container {
+   position: absolute;
+   left: 0%;
+   top: 50%;
+   transform: translateY(-50%);
+   width: 300px;
+   padding: 20px;
+   background-color: transparent;
+   margin-left: 63%;
+}
+p{
+    text-align: left;
+    padding-bottom: 10%;
+    margin: 7%;
+
+}
+h2{
+    font-size: 40px;
+}
+h1{
+    font-family: Arial;
+    text-align: left;
+    margin-left: 100px;
+    margin-top: 140px;
+    font-size: 90px;
+}
+.login-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.login-container input[type="text"],
+.login-container input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+
+.login-container button {
+    
+    width: 100%;
+    padding: 10px;
+    background-color: #63090e;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+.login-container button:hover {
+    background-color: #45a049;
+}
+
